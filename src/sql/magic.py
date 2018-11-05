@@ -109,9 +109,6 @@ class SqlMagic(Magics, Configurable):
                     print('Returning data to local variables [{}]'.format(
                         ', '.join(keys)))
 
-                if self.print_conn_list:
-
-
                 self.shell.user_ns.update(result)
 
                 return None
