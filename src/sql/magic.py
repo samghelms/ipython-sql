@@ -38,7 +38,7 @@ class SqlMagic(Magics, Configurable):
                            "a sqlalchemy connection string is formed from the "
                            "matching section in the DSN file.")
     autocommit = Bool(True, config=True, help="Set autocommit mode")
-    print_connections = Bool(True, config=False, help="Print out a list of connections when you run a query")
+    print_connections = Bool(True, config=True, help="Print out a list of connections when you run a query")
 
 
     def __init__(self, shell):
